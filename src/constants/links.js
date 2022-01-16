@@ -31,4 +31,4 @@ const Links = ({ styleClass, children }) => {
 export default Links
 
 // Instead of creating an array of links, these are hard-coded
-// Passing in styleClass as prop for the CSS classname
+// Passing in styleClass as a prop to specify classnames within the child component, that then get converted to a class attribute within that child component.

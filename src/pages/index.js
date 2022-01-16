@@ -6,7 +6,6 @@ import { graphql } from 'gatsby'
 const IndexPage = () => {
   return (
     <Layout>
-      /
     </Layout>
   )
 }
