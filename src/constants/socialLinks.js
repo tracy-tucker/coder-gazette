@@ -1,25 +1,25 @@
 import React from "react"
 import {
-  FaFacebookSquare,
-  FaDribbbleSquare,
   FaTwitterSquare,
+  FaMedium,
+  FaGithubSquare,
 } from "react-icons/fa"
 const SocialLinks = ({ styleClass }) => {
   return (
     <ul className={styleClass}>
       <li>
-        <a href="https://twitter.com">
-          <FaFacebookSquare className="social-icon facebook-icon"></FaFacebookSquare>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com">
-          <FaDribbbleSquare className="social-icon dribble-icon"></FaDribbbleSquare>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com">
+        <a href="https://twitter.com/mapTracy">
           <FaTwitterSquare className="social-icon twitter-icon"></FaTwitterSquare>
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/@tracy-tucker">
+          <FaMedium className="social-icon medium-icon"></FaMedium>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/tracy-tucker">
+          <FaGithubSquare className="social-icon github-icon"></FaGithubSquare>
         </a>
       </li>
     </ul>

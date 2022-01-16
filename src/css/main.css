@@ -225,13 +225,13 @@ Navbar
   display: none;
 }
 
-.facebook-icon {
-  color: #3b5998;
+.github-icon {
+  color: #000;
 }
 .twitter-icon {
   color: #00acee;
 }
-.dribble-icon {
+.medium-icon {
   color: #ea4c89;
 }
 @media screen and (min-width: 800px) {
