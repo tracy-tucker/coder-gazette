@@ -10,11 +10,11 @@ import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 // import Footer from './Footer'
 const Layout = ({ children }) => {
-  
+  const [isOpen, setIsOpen] = React.useState(false)
   return (
     <>
     <Navbar />
-    <Sidebar />
+    <Sidebar isOpen={isOpen}/>
     {/* <Footer></Footer> */}
      <main>{children}</main>
     </>
