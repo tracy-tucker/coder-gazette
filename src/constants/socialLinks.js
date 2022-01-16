@@ -26,3 +26,5 @@ const SocialLinks = ({ styleClass }) => {
   )
 }
 export default SocialLinks
+
+// Passing in styleClass as prop for the CSS classname
