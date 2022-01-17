@@ -1,10 +1,22 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const Hero = () => {
+const Hero = ({showCoder}) => {
   return (
-    <h4>hero component</h4>
+    <header className='hero'>
+      {showCoder && (
+        <StaticImage
+          src="../assets/person.png"
+          placeholder='blurred'
+          className='hero-person'
+          alt="coder"
+        />
+      )}
+    </header>
   )
 }
 
 export default Hero
+
+// Passing in the prop, showCoder.
+// If showCoder is present, then coder image is visible
