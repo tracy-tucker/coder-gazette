@@ -11,10 +11,13 @@ import Sidebar from './Sidebar'
 // import Footer from './Footer'
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <>
-    <Navbar />
-    <Sidebar isOpen={isOpen}/>
+    <Navbar toggle={toggle}/>
+    <Sidebar isOpen={isOpen} toggle={toggle}/>
     {/* <Footer></Footer> */}
      <main>{children}</main>
     </>
@@ -22,3 +25,7 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+// Creating a toggle functionality for both Navbar and Sidebar
+// Passing toggle to both in order to open/close navbar and sidebar on smaller screen sizes
+// Passing isOpen to Sidebar to create a dynamic className, depending on state
