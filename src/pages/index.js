@@ -42,4 +42,4 @@ export const query = graphql`
 
 export default IndexPage
 
-// Querying Gatsby nodes, then destructuring the data result to pass in the posts props to the Posts Component.
+// Querying Gatsby nodes, then destructuring the data result to pass in the posts props to the Posts Index Component.
