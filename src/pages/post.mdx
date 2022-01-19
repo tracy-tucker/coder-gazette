@@ -1,3 +1,7 @@
+---
+frontmatter:
+---
+
 import {Link} from 'gatsby'
 import {FiInfo} from 'react-icons/fi'
 import {Counter, LikeButton} from '../components/Complete'
@@ -16,10 +20,6 @@ const lastName = "smith"
 ```
 
 </div>
-
-<Link to="/posts" className="btn center-btn">
-All Posts
-</Link>
 
 <div className="nice-text">
 
@@ -60,5 +60,9 @@ const LikeButton = () => {
 ```
 
 <LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+All Posts
+</Link>
 
 </section>
