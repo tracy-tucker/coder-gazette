@@ -12,7 +12,10 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      
+      categories: allMdx {
+        totalCount
+        distinct(field: frontmatter___category)
+      }
     }
   `)
 
