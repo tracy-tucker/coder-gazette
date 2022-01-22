@@ -18,8 +18,8 @@ const Post = ({excerpt, frontmatter}) => {
         <p>{excerpt}</p>
         <Link to={`posts/${slug}`} className='link'>Continue Reading <IoMdArrowRoundForward /></Link>
         <footer>
-          <span className='data'>
-            <FaRegClock className='icon'></FaRegClock>
+          <span className='date'>
+            <FaRegClock className='icon' />
             {date}
           </span>
           <span>
