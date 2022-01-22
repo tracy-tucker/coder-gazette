@@ -16,7 +16,9 @@ const Post = ({excerpt, frontmatter}) => {
         <h3>{title}</h3>
         <div className='underline'> </div>
         <p>{excerpt}</p>
-        <Link to={`posts/${slug}`} className='link'>Continue Reading <IoMdArrowRoundForward /></Link>
+        <Link to={`/posts/${slug}`} className='link'>
+          Continue Reading <IoMdArrowRoundForward />
+        </Link>
         <footer>
           <span className='date'>
             <FaRegClock className='icon' />

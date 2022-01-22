@@ -7,8 +7,14 @@ import Banner from '../components/Banner'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 const PostTemplate = ({data}) => {
-  console.log('passing in', data)
-  const {mdx:{frontmatter:{title, category, image, date}, body}} = data
+  
+  const {
+    mdx:{
+      frontmatter:{title, category, image, date},
+      body,
+    },
+  } = data
+
   return (
     <Layout>
       <Hero />
