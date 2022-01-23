@@ -10,10 +10,17 @@ const exampleCode = `
     console.log(test);
 })();`
 
-const Example = () => {
-  return (
+const Example = (props) => {
+    // props = all props within the <pre> element
+    // props.children.props.children.trim() = grabbing the typed, visible code within the <pre> element
+    // language will be dynamic, to pull language in props
+    const className = props.children.props.className;
+    const language = className.replace(/language-/, "")
+    
+    
+    return (
       <div>
-          <Highlight {...defaultProps} code={exampleCode}  language="jsx">
+          <Highlight {...defaultProps} code={props.children.props.children.trim()}  language={language} theme={theme}>
               {({ className, style, tokens, getLineProps, getTokenProps }) => (
                   <pre className={className} style={style}>
                       {tokens.map((line, i) => (
@@ -27,7 +34,7 @@ const Example = () => {
               )}
           </Highlight>,
       </div>
-  )
+    )
 };
 
 export default Example;
